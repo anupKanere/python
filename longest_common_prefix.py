@@ -44,6 +44,8 @@ def main():
     longest_prefix = sol.longestCommonPrefix(strs)
     print(f"longest prefix -> {longest_prefix}")
 
+    print("----------------------------------------")
+
     longest_prefix = sol.longest_common_prefix_optimized(strs)
     print(f"longest prefix optimized -> {longest_prefix}")
 
