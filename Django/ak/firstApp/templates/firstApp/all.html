@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}FIRST APP{% endblock %}
+
+{% block content %}
+    <h1>Displaying All Users</h1>
+    {% for user in users %}
+    <div class="user-item">
+        <img src="{{ user.image.url }}" alt="User Image">
+        <h2>{{ user.name }}</h2>
+        <h3>{{ user.mobile_number }}</h3>
+    </div>
+    {% endfor %}
+{% endblock %}
